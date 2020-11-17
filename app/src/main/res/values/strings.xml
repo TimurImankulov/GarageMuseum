@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GarageMuseum</string>
+    <string name="onboard_title">Перед тобой\n«Музей на РЖЯ - детям»,\nобъясняющий незнакомые слова\nиз мира искусства на русском\nжестовом языке!</string>
+    <string name="greeting_title">Привет!\nДавай знакомиться!\nкак тебя зовут?</string>
+    <string name="my_name">МЕНЯ ЗОВУТ</string>
+    <string name="your_name">ТВОЕ ИМЯ</string>
+</resources>
