@@ -36,7 +36,7 @@ class AgeFragment : BaseFragment() {
         val age = scaleValue / 6
         if (age == 16) {
             tvAge.text = getString(R.string.sixteen_plus)
-        } else tvAge.text = (age + 1).toString()
+        } else if (age in 1..15) tvAge.text = age.toString()
 
         when (age) {
             in 1..4 -> tvAgeDesc.text = getString(R.string.greeting_desc_one)
