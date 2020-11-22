@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/imaginery"
+        android:gravity="center_horizontal|top"
+        android:text="@string/my_name"
+        android:textColor="@color/grey_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.garagemuseum.view.CustomNameEditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/imaginery"
+        android:gravity="center_horizontal|top"
+        android:hint="@string/name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:minWidth="130dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="28sp"
+        app:backgroundTint="@color/yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

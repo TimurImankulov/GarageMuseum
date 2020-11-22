@@ -11,19 +11,18 @@
         android:layout_height="0dp"
         android:scaleType="fitStart"
         android:src="@drawable/ic_greeting"
-        app:layout_constraintBottom_toBottomOf="@id/etName"
+        app:layout_constraintBottom_toBottomOf="@id/viewInputName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/title"
+    <com.example.garagemuseum.view.WriterTextView
+        android:id="@+id/tvWriter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/imaginery"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="7sp"
-        android:text="@string/greeting_title"
         android:textColor="@color/grey_dark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/image"
@@ -32,36 +31,24 @@
         app:layout_constraintTop_toTopOf="@id/image"
         app:layout_constraintVertical_bias="0.23" />
 
-
-    <TextView
-        android:id="@+id/tvName"
+    <com.example.garagemuseum.view.InputNameCustomView
+        android:id="@+id/viewInputName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/imaginery"
-        android:gravity="center_horizontal|top"
-        android:text="@string/my_name"
-        android:textColor="@color/grey_dark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/etName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/yellow"
-        android:fontFamily="@font/imaginery"
-        android:gravity="center_horizontal|top"
-        android:hint="@string/your_name"
-        android:inputType="text"
-        android:minWidth="100dp"
-        android:textColor="@color/grey"
-        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <com.example.garagemuseum.view.AnimatedPressImageView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,5 +18,14 @@
         android:id="@+id/greetingFragment"
         tools:layout="@layout/fragment_greeting"
         android:name="com.example.garagemuseum.ui.registration.greeting.GreetingFragment"
-        android:label="GreetingFragment" />
+        android:label="GreetingFragment" >
+        <action
+            android:id="@+id/action_greetingFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageFragment"
+        tools:layout="@layout/fragment_age"
+        android:name="com.example.garagemuseum.ui.registration.age.AgeFragment"
+        android:label="AgeFragment" />
 </navigation>
